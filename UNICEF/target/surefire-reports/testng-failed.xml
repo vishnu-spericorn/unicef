@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Automation]">
+  <test thread-count="5" verbose="0" name="Cart-CH(failed)">
+    <parameter name="browser" value="1"/>
+    <classes>
+      <class name="testcase.CriticalPathFlow">
+        <methods>
+          <include name="tearDown"/>
+          <include name="endTest"/>
+          <include name="typeandsearch" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcase.CriticalPathFlow -->
+    </classes>
+  </test> <!-- Cart-CH(failed) -->
+</suite> <!-- Failed suite [Automation] -->

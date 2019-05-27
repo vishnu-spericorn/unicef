@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Loading Homepage]]>
+    </line>
+    <line>
+      <![CDATA[Searched forBlue]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for C3 to load]]>
+    </line>
+    <line>
+      <![CDATA[Total Products found84]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on product ID35429]]>
+    </line>
+    <line>
+      <![CDATA[Added product with 35429to cart]]>
+    </line>
+    <line>
+      <![CDATA[Redirecting to cart page with price$29.95]]>
+    </line>
+    <line>
+      <![CDATA[Uncheck the donation]]>
+    </line>
+  </reporter-output>
+  <suite name="Automation" duration-ms="106831" started-at="2019-05-27T06:50:56Z" finished-at="2019-05-27T06:52:43Z">
+    <groups>
+    </groups>
+    <test name="Cart-CH" duration-ms="106831" started-at="2019-05-27T06:50:56Z" finished-at="2019-05-27T06:52:43Z">
+      <class name="testcase.CriticalPathFlow">
+        <test-method status="PASS" signature="setUp(java.lang.Integer, java.lang.reflect.Method)[pri:0, instance:testcase.CriticalPathFlow@edf4efb]" name="setUp" is-config="true" duration-ms="5010" started-at="2019-05-27T06:50:56Z" finished-at="2019-05-27T06:51:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcase.CriticalPathFlow.typeandsearch(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="typeandsearch(java.lang.String)[pri:0, instance:testcase.CriticalPathFlow@edf4efb]" name="typeandsearch" duration-ms="100861" started-at="2019-05-27T06:51:01Z" finished-at="2019-05-27T06:52:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Loading Homepage]]>
+            </line>
+            <line>
+              <![CDATA[Searched forBlue]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for C3 to load]]>
+            </line>
+            <line>
+              <![CDATA[Total Products found84]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on product ID35429]]>
+            </line>
+            <line>
+              <![CDATA[Added product with 35429to cart]]>
+            </line>
+            <line>
+              <![CDATA[Redirecting to cart page with price$29.95]]>
+            </line>
+            <line>
+              <![CDATA[Uncheck the donation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- typeandsearch -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.CriticalPathFlow@edf4efb]" name="tearDown" is-config="true" duration-ms="908" started-at="2019-05-27T06:52:42Z" finished-at="2019-05-27T06:52:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=typeandsearch status=SUCCESS method=CriticalPathFlow.typeandsearch(java.lang.String)[pri:0, instance:testcase.CriticalPathFlow@edf4efb] output=Loading Homepage]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:testcase.CriticalPathFlow@edf4efb]" name="endTest" is-config="true" duration-ms="1" started-at="2019-05-27T06:52:43Z" finished-at="2019-05-27T06:52:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- testcase.CriticalPathFlow -->
+    </test> <!-- Cart-CH -->
+  </suite> <!-- Automation -->
+</testng-results>
