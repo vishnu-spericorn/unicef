@@ -26,3 +26,4 @@
         <arg line='/c cd ${selenium_workspace}/  &amp; c:\maven\bin\mvn.cmd  clean test'/>
     </exec>
   </target>
+</project>
