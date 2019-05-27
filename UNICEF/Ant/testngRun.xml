@@ -2,7 +2,6 @@
 
   <property environment="env"/>
   <property file="testngRun.properties" />
-
   <target name="buildMain">
     <!-- sync main app -->
     <sync todir="${destination_app_dir}" overwrite="true">
@@ -16,7 +15,7 @@
       </fileset>
     </sync>
   </target>
-<target name="TestNG">
+  <target name="TestNG">
     <sync todir="${selenium_workspace}" overwrite="true" verbose="true">
         <fileset dir="${jenkins_workspace_dir}">
             <exclude name="**/test_data/**"/>
