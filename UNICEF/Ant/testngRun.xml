@@ -1,0 +1,28 @@
+<project default="testngRun">
+
+  <property environment="env"/>
+  <property file="testngRun.properties" />
+
+  <target name="buildMain">
+    <!-- sync main app -->
+    <sync todir="${destination_app_dir}" overwrite="true">
+      <fileset dir="${jenkins_workspace_dir}">
+        <exclude name="**/.gitignore"/>
+        <exclude name="**/.git"/>
+        <exclude name="**/designassets/"/>
+        <exclude name="**/otherFiles/"/>
+        <exclude name="**/*.db"/>
+        <exclude name="**/*.md"/>
+      </fileset>
+    </sync>
+  </target>
+<target name="TestNG">
+      <sync todir="${selenium_workspace}" overwrite="true" verbose="true">
+        <fileset dir="${jenkins_workspace_dir}">
+            <exclude name="**/test_data/**"/>
+        </fileset>
+    </sync>
+    <exec executable="cmd">
+        <arg line='/c cd ${selenium_workspace}/  &amp; c:\maven\bin\mvn.cmd  clean test'/>
+    </exec>
+  </target>
