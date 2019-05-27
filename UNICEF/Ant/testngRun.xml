@@ -16,13 +16,13 @@
     </sync>
   </target>
   <target name="TestNG">
-    <sync todir="${selenium_workspace}" overwrite="true" verbose="true">
+    <sync todir="${selenium_workspace}" overwrite="true" verbose="false">
         <fileset dir="${jenkins_workspace_dir}">
             <exclude name="**/test_data/**"/>
         </fileset>
     </sync>
     <exec executable="cmd">
-        <arg line='/c cd ${selenium_workspace}/  &amp; c:\maven\bin\mvn.cmd  clean test'/>
+        <arg line='/c cd ${selenium_workspace}/UNICEF  &amp; c:\maven\bin\mvn.cmd  clean test'/>
     </exec>
   </target>
 </project>
